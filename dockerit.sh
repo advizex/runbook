@@ -3,9 +3,9 @@
 # add all our dependencies
 apk update
 
-apk add python py-pip make
+apk add python py-pip make python-dev jpeg-dev build-base zlib-dev
 
-pip install --no-cache-dir -r /projects/project/requirements.txt
+LIBRARY_PATH=/lib:/usr/lib /bin/sh -c "pip install --no-cache-dir -r /projects/project/requirements.txt"
 
 # build the content and put it where nginx expects
 make html
