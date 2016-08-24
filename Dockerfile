@@ -1,4 +1,4 @@
-FROM advizex/nginx:latest
+FROM nginx:latest
 
 COPY dockerit.sh /projects/project/
 COPY requirements.txt /projects/project/
