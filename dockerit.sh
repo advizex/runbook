@@ -4,7 +4,7 @@
 DEBS='python-dev python-setuptools make graphviz zlib1g-dev libjpeg62-turbo-dev gcc'
 apt-get update
 apt-get install -y $DEBS
-easy_install pip
+apt-get install -y python-pip
 pip install --upgrade pip
 pip install --no-cache-dir -r /projects/project/requirements.txt
 
